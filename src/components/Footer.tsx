@@ -85,7 +85,7 @@ export const Footer: React.FC = () => {
           
         </div>
         <div className="border-t border-gray-800 mt-12 pt-8 text-center text-sm text-gray-600">
-          <p>© 2025 MoversUA. Всі права захищено.</p>
+          <p>© 2025 МІШКОБОРЦІ. Всі права захищено.</p>
         </div>
       </div>
     </footer>
