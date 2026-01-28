@@ -23,7 +23,7 @@ export const ScrollToTop: React.FC = () => {
 
   useEffect(() => {
     window.addEventListener('scroll', toggleVisibility);
-    // Прибираємо слухач подій, коли компонент зникає (щоб не грузити пам'ять)
+    // Прибираємо слухач подій, коли компонент зникає
     return () => {
       window.removeEventListener('scroll', toggleVisibility);
     };
@@ -33,7 +33,8 @@ export const ScrollToTop: React.FC = () => {
     <div className={`fixed bottom-8 right-8 z-50 transition-all duration-500 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10 pointer-events-none'}`}>
       <button
         onClick={scrollToTop}
-        className="bg-[#0096FF] hover:bg-[#007acc] text-white p-3 rounded-full shadow-lg shadow-blue-500/30 transition-transform hover:-translate-y-1"
+        // Оранжева кнопка (#F97316) з оранжевою тінню
+        className="bg-[#F97316] hover:bg-[#ea580c] text-white p-3 rounded-full shadow-lg shadow-orange-500/30 transition-transform hover:-translate-y-1"
         aria-label="Вгору"
       >
         <ArrowUp size={24} />

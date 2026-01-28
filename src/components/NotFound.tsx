@@ -6,18 +6,21 @@ export const NotFound: React.FC = () => {
   return (
     <div className="min-h-screen bg-[#0f111a] flex flex-col items-center justify-center text-center px-4 relative overflow-hidden">
       
-      <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-[#0096FF]/10 rounded-full blur-3xl pointer-events-none"></div>
-      <div className="absolute bottom-1/4 right-1/4 w-64 h-64 bg-[#FFD700]/5 rounded-full blur-3xl pointer-events-none"></div>
+      {/* Фонові плями: Оранжева та Жовта */}
+      <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-[#F97316]/10 rounded-full blur-3xl pointer-events-none"></div>
+      <div className="absolute bottom-1/4 right-1/4 w-64 h-64 bg-[#EAB308]/5 rounded-full blur-3xl pointer-events-none"></div>
 
       <div className="relative z-10 max-w-lg">
         
         <div className="flex justify-center mb-8 relative">
-           <Truck size={100} className="text-[#0096FF] animate-bounce" />
-           <PackageX size={40} className="text-[#FFD700] absolute -right-2 top-0 rotate-12" />
+           {/* Вантажівка: Оранжева */}
+           <Truck size={100} className="text-[#F97316] animate-bounce" />
+           {/* Пакунок: Жовтий */}
+           <PackageX size={40} className="text-[#EAB308] absolute -right-2 top-0 rotate-12" />
         </div>
 
         <h1 className="text-8xl font-black text-white mb-2 tracking-tighter">
-          4<span className="text-[#FFD700]">0</span>4
+          4<span className="text-[#EAB308]">0</span>4
         </h1>
         
         <h2 className="text-2xl md:text-3xl font-bold text-gray-200 mb-4">
@@ -31,7 +34,8 @@ export const NotFound: React.FC = () => {
 
         <Link 
           to="/" 
-          className="inline-flex items-center gap-2 bg-[#0096FF] hover:bg-[#007acc] text-white font-bold py-4 px-8 rounded-xl transition-all shadow-lg shadow-blue-500/20 hover:-translate-y-1"
+          // Кнопка: Оранжева з тінню
+          className="inline-flex items-center gap-2 bg-[#F97316] hover:bg-[#ea580c] text-white font-bold py-4 px-8 rounded-xl transition-all shadow-lg shadow-orange-500/20 hover:-translate-y-1"
         >
           <ArrowLeft size={20} />
           Повернутися на базу

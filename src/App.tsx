@@ -10,12 +10,14 @@ import { ScrollToTop } from './components/ScrollToTop';
 import { NotFound } from './components/NotFound';
 import { Reviews } from './components/Reviews';
 import { FAQ } from './components/FAQ';
+import { Benefits } from './components/Benefits';
 
 const LandingPage = () => (
   <>
     <Header />
     <main>
       <Hero />
+      <Benefits />
       <Pricing />
       <About />
       <Reviews />
@@ -23,6 +25,7 @@ const LandingPage = () => (
     </main>
     <Footer />
     <ScrollToTop />
+    
   </>
 );
 

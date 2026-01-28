@@ -8,11 +8,13 @@ export const About: React.FC = () => {
         
         {/* ЛІВА ЧАСТИНА: Текст (На мобільному знизу, order-2) */}
         <div className="order-2 md:order-1">
-          <div className="inline-block px-3 py-1 mb-4 text-xs font-bold tracking-wider text-[#0096FF] uppercase bg-[#0096FF]/10 rounded-full">
+          {/* Бейдж: Оранжевий */}
+          <div className="inline-block px-3 py-1 mb-4 text-xs font-bold tracking-wider text-[#F97316] uppercase bg-[#F97316]/10 rounded-full">
             Про компанію
           </div>
           <h2 className="text-3xl md:text-4xl font-bold mb-6 leading-tight">
-            Чому обирають <span className="text-[#D8A25E]">МішкоБорців</span>?
+            {/* Текст: Оранжевий */}
+            Чому обирають <span className="text-[#F97316]">МішкоБорців</span>?
           </h2>
           <p className="text-gray-400 mb-6 text-lg">
             Працюємо швидко, чітко і акуратно.
@@ -29,13 +31,15 @@ export const About: React.FC = () => {
               "Прибираємо за собою"
             ].map((item, index) => (
               <li key={index} className="flex items-center gap-3">
-                <CheckCircle2 className="text-[#FFD700] w-6 h-6 flex-shrink-0" />
+                {/* Іконки: Жовті */}
+                <CheckCircle2 className="text-[#EAB308] w-6 h-6 flex-shrink-0" />
                 <span className="text-gray-300">{item}</span>
               </li>
             ))}
           </ul>
 
-          <div className="p-6 bg-[#0f111a] rounded-xl border-l-4 border-[#FFD700]">
+          {/* Цитата: Жовтий бордер */}
+          <div className="p-6 bg-[#0f111a] rounded-xl border-l-4 border-[#EAB308]">
             <p className="text-gray-400 italic">
               "Наша мета — забезпечити професійне та безпечне виконання вантажно-розвантажувальних робіт."
             </p>
@@ -49,12 +53,12 @@ export const About: React.FC = () => {
           <div className="flex flex-col gap-3 md:gap-6 md:mt-12">
             
             {/* Фото 1 */}
-            <div className="h-32 md:h-64 bg-gray-800 rounded-2xl overflow-hidden shadow-2xl border border-gray-700 hover:scale-105 transition-transform duration-500 cursor-pointer">
+            <div className="h-32 md:h-64 bg-gray-800 rounded-2xl overflow-hidden shadow-2xl border border-gray-700 hover:border-[#F97316]/50 hover:scale-105 transition-all duration-500 cursor-pointer">
               <img src="/bij.jpg" alt="Вивіз будсміття" className="w-full h-full object-cover" />
             </div>
 
             {/* Фото 2 (Внизу зліва) */}
-            <div className="h-32 md:h-64 bg-gray-800 rounded-2xl overflow-hidden shadow-2xl border border-gray-700 hover:scale-105 transition-transform duration-500 cursor-pointer">
+            <div className="h-32 md:h-64 bg-gray-800 rounded-2xl overflow-hidden shadow-2xl border border-gray-700 hover:border-[#F97316]/50 hover:scale-105 transition-all duration-500 cursor-pointer">
                <img src="/sprinter_1.jpg" alt="Наш автопарк" className="w-full h-full object-cover" />
             </div>
 
@@ -64,12 +68,12 @@ export const About: React.FC = () => {
           <div className="flex flex-col gap-3 md:gap-6">
             
             {/* Фото 3 (Зверху справа) */}
-            <div className="h-32 md:h-64 bg-gray-800 rounded-2xl overflow-hidden shadow-2xl border border-gray-700 hover:scale-105 transition-transform duration-500 cursor-pointer">
+            <div className="h-32 md:h-64 bg-gray-800 rounded-2xl overflow-hidden shadow-2xl border border-gray-700 hover:border-[#F97316]/50 hover:scale-105 transition-all duration-500 cursor-pointer">
                <img src="/sprinter_rizne.png" alt="Вантажне авто з речами" className="w-full h-full object-cover" />
             </div>
             
             {/* Фото 4 (Внизу справа) */}
-            <div className="h-32 md:h-64 bg-gray-800 rounded-2xl overflow-hidden shadow-2xl border border-gray-700 hover:scale-105 transition-transform duration-500 cursor-pointer">
+            <div className="h-32 md:h-64 bg-gray-800 rounded-2xl overflow-hidden shadow-2xl border border-gray-700 hover:border-[#F97316]/50 hover:scale-105 transition-all duration-500 cursor-pointer">
                <img src="/mebli.jpg" alt="Перевезення меблів" className="w-full h-full object-cover" />
             </div>
 
