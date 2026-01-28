@@ -3,6 +3,7 @@ import React from 'react';
 // Users (Команда), CalendarCheck (Роки досвіду), Handshake (Співпраця), Clock (Час)
 import { Users, CalendarCheck, Handshake, Clock } from 'lucide-react';
 
+
 const BENEFITS = [
   {
     icon: Users, // Іконка людей для "Досвідчені працівники"
@@ -28,7 +29,7 @@ const BENEFITS = [
 
 export const Benefits: React.FC = () => {
   return (
-    <section className="relative py-16 md:py-24 bg-[#0f111a] overflow-hidden">
+     <section id="about" className="py-12 md:py-24 bg-[#1a1d24] text-white">
       
       {/* ФОН */}
       <div className="absolute inset-0 z-0">
@@ -37,7 +38,6 @@ export const Benefits: React.FC = () => {
           alt="Background" 
           className="w-full h-full object-cover opacity-20 blur-sm"
         />
-        <div className="absolute inset-0 bg-[#0f111a]/90"></div>
       </div>
 
       <div className="container mx-auto px-4 relative z-10">
