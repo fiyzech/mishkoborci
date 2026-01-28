@@ -13,8 +13,8 @@ export const Header: React.FC = () => {
         
         {/* ЛОГОТИП */}
         <a href="#hero" className="flex items-center gap-2 group cursor-pointer z-50 mr-2">
-          <div className="text-xl md:text-2xl font-black tracking-wider uppercase select-none leading-none">
-            <span className="text-[#EAB308]">МішкоБорці</span>    
+          <div className="text-xl md:text-2xl font-black tracking-wider  select-none leading-none">
+            <span className="text-[#EAB308]">МішкоБорeць</span>    
           </div>
         </a>
 
@@ -69,6 +69,7 @@ export const Header: React.FC = () => {
           <a href="#pricing" className="hover:text-white transition-colors">Ціни</a>
           <a href="#about" className="hover:text-white transition-colors">Про нас</a>
           <a href="#reviews" className="hover:text-white transition-colors">Відгуки</a>
+          <a href="#faq" className="hover:text-white transition-colors">Часті запитання</a>
         </nav>
 
         {/* ДЕСКТОП КОНТАКТИ */}

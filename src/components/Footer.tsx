@@ -7,16 +7,16 @@ export const Footer: React.FC = () => {
   const phoneNumber = CONTACTS.phone.replace(/\D/g, '');
 
   return (
-    <footer id="contact" className="bg-[#0b0d14] text-gray-400 py-16 pb-24 md:pb-16 border-t border-gray-800">
+    <footer id="contact" className="bg-[#0b0d14] text-gray-400 py-10 pb-24 md:pb-8 border-t border-gray-800">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
           
           {/* Лого + Соцмережі */}
           <div>
             <a href="#hero" className="flex items-center gap-2 mb-6 group cursor-pointer w-fit">
-              <div className="text-2xl font-black tracking-wider uppercase">
+              <div className="text-2xl font-black tracking-wider ">
                 {/* Замінив синій на Оранжевий */}
-                <span className="text-[#F97316]">МІШКОБОРЦІ</span>
+                <span className="text-[#F97316]">МішкоБорeць</span>
               </div>
             </a>
             <p className="text-sm leading-relaxed mb-6">
@@ -88,7 +88,7 @@ export const Footer: React.FC = () => {
           
         </div>
         <div className="border-t border-gray-800 mt-12 pt-8 text-center text-sm text-gray-600">
-          <p>© 2025 МІШКОБОРЦІ. Всі права захищено.</p>
+          <p>© 2025 МішкоБорець. Всі права захищено.</p>
         </div>
       </div>
     </footer>

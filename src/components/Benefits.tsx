@@ -29,7 +29,7 @@ const BENEFITS = [
 
 export const Benefits: React.FC = () => {
   return (
-     <section id="about" className="py-12 md:py-24 bg-[#1a1d24] text-white">
+     <section id="benefits" className="py-12 md:py-24 bg-[#1a1d24] text-white">
       
       {/* ФОН */}
       <div className="absolute inset-0 z-0">
