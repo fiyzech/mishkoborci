@@ -12,7 +12,7 @@ export const About: React.FC = () => {
             Про компанію
           </div>
           <h2 className="text-3xl md:text-4xl font-bold mb-6 leading-tight">
-            Чому обирають <span className="text-[#0096FF]">МішкоБорців</span>?
+            Чому обирають <span className="text-[#D8A25E]">МішкоБорців</span>?
           </h2>
           <p className="text-gray-400 mb-6 text-lg">
             Працюємо швидко, чітко і акуратно.
@@ -20,6 +20,9 @@ export const About: React.FC = () => {
           
           <ul className="space-y-4 mb-8">
             {[
+              "Більше 10-ти років на ринку",
+              "На постійній співпраці з клієнтами",
+              "Ринкові ціни",
               "Відповідальність за вантаж",
               "Фізично міцні та ввічливі працівники",
               "Подача машини протягом 30 хвилин",

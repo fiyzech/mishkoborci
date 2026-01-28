@@ -13,7 +13,7 @@ export const Header: React.FC = () => {
         {/* 1. ЛОГОТИП (Зліва) */}
         <a href="#hero" className="flex items-center gap-2 group cursor-pointer z-50 mr-2">
           <div className="text-xl md:text-2xl font-black tracking-wider uppercase select-none leading-none">
-            <span className="text-[#0096FF]">МІШКОБОРЦІ</span>
+            <span className="text-[#D8A25E]">МішкоБорець</span>
           </div>
         </a>
 
@@ -80,7 +80,7 @@ export const Header: React.FC = () => {
           <a href={`viber://chat?number=%2B${phoneNumber}`} className="text-[#7360F2] hover:text-white hover:-translate-y-1 transition-transform">
             <FaViber size={24} />
           </a>
-          <a href={`tel:${phoneNumber}`} className="flex items-center gap-2 text-[#FFD700] font-bold text-lg ml-2 hover:scale-105 transition-transform">
+          <a href={`tel:${phoneNumber}`} className="flex items-center gap-2 text-[#D8A25E] font-bold text-lg ml-2 hover:scale-105 transition-transform">
             <PhoneCall className="w-5 h-5" />
             {CONTACTS.phone}
           </a>
