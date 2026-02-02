@@ -44,7 +44,7 @@ export const Hero: React.FC = () => {
           </h1>
           
           <p className="text-gray-300 text-lg md:text-xl mb-8 max-w-xl leading-relaxed drop-shadow-md mx-auto md:mx-0">
-            Підйом будматеріалів, перевезення меблів, спуск та вивіз сміття. 
+           Підйом будматеріалів, широкоформатної плитки, вивіз сміття, перевезення меблів та демонтажні роботи.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
