@@ -4,7 +4,6 @@ import { FaViber, FaTelegram } from 'react-icons/fa';
 import { CONTACTS } from '../constants/data';
 
 export const Header: React.FC = () => {
-  // Захист від помилки, якщо CONTACTS ще не підтягнулись
   const phoneNumber = CONTACTS?.phone ? CONTACTS.phone.replace(/\D/g, '') : '0000000000';
 
   return (
@@ -15,25 +14,27 @@ export const Header: React.FC = () => {
         <a href="#hero" className="flex items-center gap-3 group cursor-pointer z-50 mr-2">
           
           {/* КАРТИНКА ЛОГОТИПУ */}
+          {/* Змінив розміри: 
+              h-9 w-9 (36px) на мобільному
+              md:h-10 md:w-10 (40px) на ПК (було 12/48px) 
+          */}
           <img 
-            src="/logo2.png"   // Переконайся, що файл називається logo.png і лежить у public
+            src="/logo2.png" 
             alt="Логотип" 
-            className="h-10 w-auto object-contain hover:scale-105 transition-transform duration-300 drop-shadow-[0_0_8px_rgba(249,115,22,0.5)]"
+            className="h-9 w-9 md:h-10 md:w-10 object-contain hover:scale-105 transition-transform duration-300 drop-shadow-[0_0_8px_rgba(249,115,22,0.5)] rounded-full"
           />
 
-          {/* ТЕКСТОВА НАЗВА (як на скріншоті) */}
-          <div className="text-xl md:text-2xl font-black tracking-wider uppercase select-none leading-none">
-            {/* Градієнтний текст МішкоБорець */}
+          {/* ТЕКСТОВА НАЗВА (тільки на ПК) */}
+          <div className="hidden sm:block text-xl md:text-2xl font-black tracking-wider uppercase select-none leading-none">
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#F97316] to-[#EAB308]">
               МішкоБорець
             </span>
           </div>
         </a>
 
-        {/* 2. МОБІЛЬНА ПАНЕЛЬ (Кнопки праворуч на телефоні) */}
-        <div className="flex items-center gap-3 md:hidden">
+        {/* 2. МОБІЛЬНА ПАНЕЛЬ */}
+        <div className="flex items-center gap-2 md:hidden">
           
-          {/* Кнопка "Ціни" */}
           <a 
             href="#pricing" 
             className="w-9 h-9 flex items-center justify-center rounded-full bg-gray-800 text-white border border-gray-700 active:scale-95 transition-all hover:border-[#F97316]"
@@ -42,9 +43,8 @@ export const Header: React.FC = () => {
             <FileText size={18} />
           </a>
 
-          <div className="w-px h-6 bg-gray-800 mx-1"></div>
+          <div className="w-px h-6 bg-gray-800 mx-0.5"></div>
 
-          {/* Telegram */}
           <a 
             href={`https://t.me/+${phoneNumber}`} 
             target="_blank" 
@@ -55,7 +55,6 @@ export const Header: React.FC = () => {
             <FaTelegram size={20} />
           </a>
 
-          {/* Viber */}
           <a 
             href={`viber://chat?number=%2B${phoneNumber}`} 
             target="_blank" 
@@ -66,7 +65,6 @@ export const Header: React.FC = () => {
             <FaViber size={20} />
           </a>
 
-          {/* ТЕЛЕФОН */}
           <a 
             href={`tel:${phoneNumber}`} 
             className="flex items-center justify-center w-10 h-10 rounded-full bg-[#F97316] text-white shadow-[0_0_15px_rgba(249,115,22,0.3)] animate-pulse hover:animate-none active:scale-95 transition-all hover:bg-[#ea580c]"
@@ -78,7 +76,6 @@ export const Header: React.FC = () => {
 
         {/* 3. ДЕСКТОПНЕ МЕНЮ */}
         <nav className="hidden lg:flex items-center gap-8 text-sm font-semibold">
-          <a href="#pricing" className="hover:text-[#F97316] transition-colors">Акції</a>
           <a href="#pricing" className="hover:text-white transition-colors">Послуги</a>
           <a href="#pricing" className="hover:text-white transition-colors">Ціни</a>
           <a href="#about" className="hover:text-white transition-colors">Про нас</a>
